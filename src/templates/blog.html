@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        {% if blogs|length == 1 %}
+            {% set TextPageTitle = blogs[0]['Title']  %}
+
+            {% set TextHeadingRight = blogs[0]['Title']  %}
+            {% set LinkHeadingRight = '/blog/' + blogs[0]['Id'] %}
+
+            {% set TextHeadingLeft = 'Back to all blog' %}
+            {% set LinkHeadingLeft = '/blog' %}
+        {% else %}
+            {% set TextPageTitle = 'Blog'  %}
+
+            {% set TextHeadingRight = 'Post new blog' %}
+            {% set LinkHeadingRight = '/edit' %}
+
+            {% set TextHeadingLeft = 'Welcome to my blog' %}
+            {% set LinkHeadingLeft = '/blog' %}
+        {% endif %}
+		<meta charset="utf-8">
+		<title> {{ TextPageTitle }} </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+	</head>
+	<body>
+		<div id="wrapper">
+            <div id="header">
+                <h1 class="small-header right"><a href="{{ LinkHeadingRight }}">{{ TextHeadingRight }}</a></h1>
+                <h1><a href="{{ LinkHeadingLeft }}">{{ TextHeadingLeft }}</a></h1>
+            </div>
+			<div id="all_blogs">
+                {% for post in data %}
+                    <div class="blog_post">
+                        <h2><a href="/blog/{{ post['Id'] }}">{{ post['Title'] }}</a></h2>
+                        <p><small>{{ post['Time'] }}<a href="/edit/{{ post['Id'] }}">edit</a></small></p>
+                        <div class="blog_content">{{ post['Content'] }}</div>
+                    </div>
+                {% endfor %}
+			</div>
+		</div>
+	</body>
+</html>

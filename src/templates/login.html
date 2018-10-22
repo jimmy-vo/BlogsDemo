@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog Login</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1 class="small-header right"><a href="#">Login</a></h1>
+                <h1><a href="#">Blog Login</a></h1>
+            </div>
+            {% for user in data %}
+                <div class="blog_post">
+                    <h2>{{ user['username'] }}</h2>
+                    <p>{{ user['password'] }}</p>
+                </div>
+            {% endfor %}
+            <div id="all_blogs">
+              <form action = "/login" method = "post">
+                 <p>User Name:</p>
+                 <p><input type = "text" name = "username" /></p>
+                 <p>Password:</p>
+                 <p><input type = "text" name = "password" /></p>
+                 <p>
+                     <input type = "submit" value = "Login" />
+                     <input type = "submit" name="register"  value = "Register" />
+                 </p>
+              </form>
+            </div>
+        </div>
+    </body>
+</html>

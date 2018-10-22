@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% if data != None %}
+            {% set PageTitle = 'Edit Blog'  %}
+			{% set Title = data['Title']|string %}
+			{% set Id = data['Id'] %}
+			{% set Content = data['Content'] %}
+			{% set Author = 1 %}
+
+            {% set TextHeadingLeft = Title %}
+            {% set LinkHeadingLeft = '/blog/'+Id|string %}
+		{% else %}
+            {% set PageTitle = 'Create New Blog'  %}
+			{% set Title = '' %}
+			{% set Id = '' %}
+			{% set Content = '' %}
+			{% set Author = 1 %}
+
+            {% set TextHeadingLeft = PageTitle %}
+            {% set LinkHeadingLeft = '/edit' %}
+		{% endif %}
+        {% set TextHeadingRight = 'Back to all blog' %}
+        {% set LinkHeadingRight = '/blog' %}
+		<meta charset="utf-8">
+		<title> {{ PageTitle }} </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+	</head>
+	<body>
+		<div id="wrapper">
+            <div id="header">
+                <h1 class="small-header right"><a href="{{ LinkHeadingRight }}">{{ TextHeadingRight }}</a></h1>
+                <h1><a href="{{ LinkHeadingLeft }}">{{ TextHeadingLeft }}</a></h1>
+            </div>
+            <form action = "/edit" method = "post">
+                <fieldset>
+                  <p>
+                    <input type="hidden" name="id" id="id" value="{{ Id }}" />
+                  </p>
+                  <p>
+                    <label for="title">Title</label>
+                    <input name="title" id="title" value="{{ Title }}" />
+                  </p>
+                  <p>
+                    <label for="content">Content</label>
+                    <textarea name="content" id="content" >{{ Content }}</textarea>
+                  </p>
+                  <p>
+                    {% if data != None %}
+                        <input type="submit" value="Update" />
+                        <input type="submit" name="delete" value="Delete" />
+                    {% else %}
+                        <input type="submit" value="Create" />
+                    {% endif %}
+                  </p>
+                </fieldset>
+            </form>
+		</div>
+	</body>
+</html>
