@@ -30,8 +30,8 @@ def blog(id):
 @app.route('/edit/<id>')
 @app.route('/edit',  methods=['POST', 'GET'], defaults={'id': ''})
 def edit(id):
+    author = session['User'];
     if request.method == 'POST':
-        author = session['User'];
         title = request.form['title']
         content = request.form['content']
 
@@ -60,7 +60,7 @@ def edit(id):
             return render_template("blog.html", data=fetch_blog_single(id, author))
     else:
         if '' != id:
-            return render_template("edit.html", data=fetch_blog_single(id)[0])
+            return render_template("edit.html", data=fetch_blog_single(id, author)[0])
         else:
             return render_template("edit.html", data=None)
 

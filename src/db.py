@@ -83,7 +83,7 @@ def fetch_blog_single(id, author):
     record = c.execute('SELECT p.Id, Title, Content, Time, Author, UserName'
                        ' FROM  Posts p JOIN Users u ON p.Author = u.Id'
                        ' WHERE p.Id = ? AND Author = ?'
-                       ' ORDER BY Time DESC', id, str(author)).fetchall()
+                       ' ORDER BY Time DESC', (id, str(author))).fetchall()
     db.close()
     return [dict(row) for row in record]
 
