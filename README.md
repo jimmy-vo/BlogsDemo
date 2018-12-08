@@ -34,18 +34,12 @@ This is a demonstration of deploying a CRUD Sites using SQLLite Database and Fla
 
 ## Deployment Instruction
 ### Prerequisites
- * Download and install the latest version of XAMPP: [Download](https://www.apachefriends.org/download.html) 
+ * Download and install the latest version of Pycharm: [Download](https://www.jetbrains.com/pycharm/) 
  
 ### Deployment
- * Run XAMPP 
-   * Start Apache
-   * Start MySQL
- * On PhpMyAdmin (http://localhost/phpmyadmin/)
-   * Create new database: "serverside"
-   * Create new user:
-     * username: "root"
-     * password: ""
-     * Global privileges: ALL PRIVILEGES
-   * Execute the give database schema under [doc/setup.sql](https://github.com/jimmyvo2410/RrcNews/blob/master/doc/setup.sql) 
- * Copy this project to C:\xampp\htdocs
- * Open http://localhost/RrcNews
+ * Open Pycharm 
+   * Open New Project
+   * Navigate to [BlogsDemo](https://github.com/jimmyvo2410/BlogsDemo/) folder
+ * Configure Interpreter
+   * In Pycharm, select File > Settings.. 
+   * In Settings, on the left pannel, select Project:BlogsDemo > Project Interpreter. Navigate to [env/Scripts/python.exe](https://github.com/jimmyvo2410/BlogsDemo/blob/master/env/Scripts/python.exe)  
