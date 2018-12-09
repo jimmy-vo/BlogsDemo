@@ -74,6 +74,15 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1170215447">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -89,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="-255">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -153,11 +162,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="47" />
-    <option name="y" value="-19" />
-    <option name="width" value="1940" />
-    <option name="height" value="1100" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -167,6 +176,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="BlogsDemo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="BlogsDemo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,28 +217,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="BlogDemo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="BlogDemo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="Refer&#9;ACTION&#9;GoToCodeGroup" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/env" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -340,9 +349,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09114858" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09114858" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Project Explorer" order="3" weight="0.32889125" />
@@ -350,14 +360,14 @@
       <window_info id="Job Explorer" order="5" weight="0.32889125" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.32832617" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4841939" weight="0.2918455" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48366702" weight="0.2918455" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48827294" weight="0.27038628" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49358973" weight="0.32827735" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49252138" weight="0.33152762" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51580614" side_tool="true" visible="true" weight="0.2918455" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.516333" side_tool="true" visible="true" weight="0.2918455" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49786323" weight="0.32827735" />
       <window_info anchor="bottom" id="Console" order="11" />
       <window_info anchor="bottom" id="DB Execution Console" order="12" />
@@ -500,8 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="-255">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
